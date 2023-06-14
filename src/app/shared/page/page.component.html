@@ -1,0 +1,10 @@
+<ul class="cards">
+  <li *ngFor="let card of cards" class="card">
+    <div>
+      <img [src]="card.image_url" alt="Card Image" class="card-image">
+      <h3 class="card-title">{{ card.name }}</h3>
+      <p class="card-type">Type: {{ card.type }}</p>
+      <p class="card-desc">{{ card.desc }}</p>
+    </div>
+  </li>
+</ul>
