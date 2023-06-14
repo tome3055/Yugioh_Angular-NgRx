@@ -64,8 +64,8 @@ app.post('/api/login', (req: Request<{}, {}, RegisterRequestInterface>, res: Res
       user: {
         id: '123',
         email: user.email,
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
+        createdAt: "createdat",
+        updatedAt: "updatedat",
         username: user.username,
         bio: null,
         image: null,
