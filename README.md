@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
+## Instalation
+
+Run npm install in the root folder and in the node-api/ folder.
+
 ## Usage
 
 You Can Login or Register with any string as long as the username and password are not empty.
