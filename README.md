@@ -18,6 +18,14 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Navigate to node-api/ and Run `npm start` 
 
+## Todo:
+
+1. Propper integration of Tailwind.
+2. Move the nav bar in it's own component.
+3. Fix a bug inside the nav bar(reload the nav bar to register that the user is logged in)
+4. Make a playground component
+5. Integrate more tests
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
