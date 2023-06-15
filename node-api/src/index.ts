@@ -34,17 +34,24 @@ fs.readFile('carddata/carddatatemp.json', 'utf8', (err, data) => {
 app.use(express.json());
 
 app.post('/api/register', (req: Request<{}, {}, any>, res: Response) => {
-  const { data } = req.body;
-  console.log(data);
+  const { user } = req.body;
+  console.log(user);
 
-  if (data) {
-    const test: any = {
+  if (user) {
+    const currentUser: ReturnUser = {
       user: {
-        id: '123'
+        id: '123',
+        email: user.email,
+        createdAt: "createdat",
+        updatedAt: "updatedat",
+        username: user.username,
+        bio: null,
+        image: null,
+        token: 'abcd1234'
       }
     };
 
-    res.status(200).json(test);
+    res.status(200).json(currentUser);
   } else {
     const errors = {
         errors: {
